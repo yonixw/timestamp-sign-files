@@ -15,7 +15,7 @@ echo ""
 echo "[*] Openssl version"
 openssl version
 
-export HASH_SHA3_256=$(openssl dgst -sha3-256 tha_rami.zip | sed 's|^.*= ||')
+export HASH_SHA3_256=$(openssl dgst -sha3-256 $FILENAME | sed 's|^.*= ||')
 echo ""
 echo "[*] Got hash (SHA3_256): $HASH_SHA3_256."
 
